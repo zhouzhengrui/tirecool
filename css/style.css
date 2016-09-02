@@ -66,18 +66,14 @@ input, select, textarea {
   width: 100%;
 }
 
-button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+button, input[type='button'], input[type='reset'], input[type='submit'] {
   cursor: pointer;
   -webkit-appearance: button;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
 
-button[disabled],
-input[disabled] {
+button[disabled], input[disabled] {
   cursor: default;
 }
 
@@ -94,8 +90,12 @@ ul {
   list-style: none;
 }
 
-em {
+em, i {
   font-style: normal;
+}
+
+b, strong {
+  font-weight: bold;
 }
 
 body {
@@ -274,21 +274,6 @@ small {
   color: #e1b400;
 }
 
-.titleBox {
-  margin-bottom: -5px;
-  padding: 30px 10px 0;
-}
-
-.titleBox .title {
-  font-weight: normal;
-  color: #dddddd;
-}
-
-.titleBox .title i {
-  font-style: normal;
-  color: #999999;
-}
-
 .buttonBox {
   margin-top: 25px;
   padding: 0 5px 15px;
@@ -340,6 +325,7 @@ small {
   display: block;
   margin-top: 15px;
   text-align: right;
+  padding: 0 10px 15px;
 }
 
 .buttonBox.small a,
@@ -355,52 +341,6 @@ small {
 .formBox {
   overflow: hidden;
   background-color: #393939;
-}
-
-.iCheckBox .iRadio {
-  width: 20px;
-  height: 20px;
-  font-size: 14px;
-  text-align: center;
-  margin-right: 10px;
-  border-radius: 50%;
-  border: 2px solid #565656;
-}
-
-.iCheckBox .iRadio.checked {
-  background-color: #fac800;
-  border-color: #fff;
-  color: #1b1b1b;
-}
-
-.iCheckBox .iRadio.checked:before {
-  font-family: 'icomoon';
-  content: "\e904";
-}
-
-.iSwitchery {
-  -webkit-border-radius: 22px;
-  border-radius: 22px;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  cursor: pointer;
-  position: relative;
-  vertical-align: middle;
-  box-sizing: content-box;
-  background-clip: content-box;
-  background-color: #393939 !important;
-  border: 1px solid #565656 !important;
-}
-
-.iSwitchery > small {
-  position: absolute;
-  top: 0;
-  width: 34px;
-  height: 34px;
-  border-radius: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  background-color: #fff;
 }
 
 ul.formList {
@@ -515,19 +455,6 @@ ul.formList .input .codeButton:active {
   background-color: #434343;
 }
 
-ul.formList .icon-arrow-right:before {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  margin-top: -8px;
-  color: #fac800;
-}
-
-ul.formList .icon-arrow-right.high,
-ul.formList .icon-arrow-right .text {
-  padding-right: 35px;
-}
-
 ul.formList .iCheckBox p {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -557,11 +484,7 @@ ul.formList .switcheryBox .switchery {
   margin-bottom: -10px;
 }
 
-ul.formList ~ .titleBox {
-  margin-top: -15px;
-}
-
-ul.formList .text {
+ul.formList p.text {
   text-align: right;
   padding-right: 10px;
   -webkit-box-flex: 1;
@@ -571,12 +494,6 @@ ul.formList .text {
   color: #ffffff;
 }
 
-ul.formList .text em {
-  font-size: 18px;
-  color: #fac800;
-  font-weight: bold;
-}
-
 ul.formList a.link {
   display: block;
   color: #ffffff;
@@ -584,6 +501,33 @@ ul.formList a.link {
 
 ul.formList a.link:active .group {
   background-color: #393939;
+}
+
+ul.formList a.btn {
+  height: auto;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding: 0 10px;
+  white-space: nowrap;
+  color: #999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-left: 1px solid #565656;
+}
+
+ul.formList a.btn:active {
+  background-color: #393939;
+}
+
+ul.formList a.btn [class*="icon-"] {
+  margin-right: 5px;
+  font-size: 18px;
 }
 
 ul.formList .numberBox .title {
@@ -636,65 +580,78 @@ ul.formList .high p {
   line-height: 1.4;
 }
 
-.questionnaireTitle {
-  color: #1b1b1b;
-  margin: 15px 0;
-  padding: 30px 10px;
-  background-color: #fac800;
-}
-
-ul.infoList {
-  overflow: hidden;
-}
-
-ul.infoList li {
-  margin: 15px 0;
-  background-color: #fff;
-  border-top: 1px solid #dddddd;
-}
-
-ul.infoList li .row {
+ul.formList .imageText {
+  display: block;
   padding: 10px;
-  position: relative;
-  border-bottom: 1px solid #dddddd;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+ul.formList .imageText:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+ul.formList .imageText.link {
+  padding: 0;
+}
+
+ul.formList .imageText.link a {
+  display: block;
+  padding: 10px;
+}
+
+ul.formList .imageText.link a:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+ul.formList .imageText.link a:active {
+  background-color: #393939;
+}
+
+ul.formList .imageText .image {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+ul.formList .imageText .image img {
+  display: block;
+  width: 75px;
+  height: 75px;
+}
+
+ul.formList .imageText .text {
+  margin-left: 85px;
+}
+
+ul.formList .imageText .text .title {
+  margin: 4px 0;
+  color: #ffffff;
+}
+
+ul.formList .imageText .text p {
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+ul.formList .cartCheck {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  font-size: 14px;
+  padding-left: 0;
 }
 
-ul.infoList li .row p.title {
-  font-weight: bold;
-}
-
-ul.infoList li .row p.gray {
-  color: #666666;
-}
-
-ul.infoList li .row p.black {
-  color: #333333;
-}
-
-ul.infoList li .row p:first-child {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-right: 10px;
-}
-
-ul.infoList li .row a {
-  height: auto;
-  margin-top: -12px;
-  margin-bottom: -12px;
-  padding: 0 10px;
-  white-space: nowrap;
-  color: #666666;
-  border-left: 1px solid #dddddd;
+ul.formList .cartCheck .checkLabel {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding-left: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -703,169 +660,132 @@ ul.infoList li .row a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #dddddd;
+  border-left: 1px solid #565656;
 }
 
-ul.infoList li .row a:active {
-  background-color: #eeeeee;
+ul.formList .cartCheck .checkLabel:active {
+  background-color: #393939;
 }
 
-ul.infoList li .row a:last-child {
-  margin-right: -10px;
+ul.formList .cartCheck .iCheck {
+  margin: 10px;
 }
 
-ul.infoList li .row a [class*="icon-"] {
-  margin-right: 5px;
-  font-size: 18px;
+ul.formList .cartCheck:active {
+  background-color: transparent;
 }
 
-ul.couponList li {
-  position: relative;
-  margin: 15px 0;
+ul.formList .cartCheck p {
+  margin: 0 10px;
+  line-height: 24px;
 }
 
-ul.couponList li:active {
-  opacity: 0.9;
+ul.formList .cartCheck a.btn {
+  border-left: none;
+  border-right: 1px solid #565656;
 }
 
-ul.couponList li img {
-  display: block;
-  width: 100%;
+ul.formList em {
+  color: #fac800;
 }
 
-ul.couponList li .info {
-  position: absolute;
-  width: 100%;
-  bottom: 5%;
-  font-size: 14px;
-  color: #333333;
+ul.formList em.big {
+  font-size: 20px;
 }
 
-ul.couponList li .info p.pull-left {
-  margin-left: 25px;
+ul.formList .baseline {
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
-ul.couponList li .info p.pull-right {
-  margin-right: 25px;
-}
-
-ul.couponList li.invalid .info,
-ul.couponList li.invalid img {
-  opacity: 0.5;
-}
-
-ul.couponList li.invalid p.dark,
-ul.couponList li.invalid p.tag {
-  position: absolute;
-  right: 15px;
-  bottom: 0;
-  padding: 10px 40px;
-}
-
-ul.couponList li.invalid p.tag {
-  color: #1b1b1b;
-  background: #fac800;
-}
-
-ul.couponList li.invalid p.dark {
-  color: #999999;
-  background: #434343;
-}
-
-ul.couponList.myCoupon {
-  margin: 15px 10px;
-}
-
-ul.couponList.myCoupon li .info p.pull-left {
-  margin-left: 15px;
-}
-
-ul.couponList.myCoupon li .info p.pull-right {
-  margin-right: 15px;
-}
-
-ul.productList {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 5px;
-}
-
-ul.productList:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-ul.productList li {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 5px;
-  float: left;
-  width: 50%;
-}
-
-ul.productList li a {
-  display: block;
-  background-color: #fff;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-}
-
-ul.productList li a:active {
-  opacity: 0.75;
-}
-
-ul.productList li .image img {
-  display: block;
-  width: 100%;
-}
-
-ul.productList li .info {
-  font-size: 14px;
-  color: #333333;
-  padding: 10px;
-}
-
-ul.productList li .info .title {
+ul.formList .oneline {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-weight: normal;
-  font-size: 14px;
-  margin-bottom: 5px;
 }
 
-ul.productList li .info .row:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
+ul.formList .gray {
+  color: #dddddd;
 }
 
-ul.productList li .info .row p {
-  line-height: 22px;
-}
-
-ul.productList li .info .row em {
+ul.formList .icon-arrow-right:before {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -8px;
   color: #fac800;
-  font-weight: bold;
-  font-size: 16px;
 }
 
-ul.productList li .info .row .gray {
-  color: #999999;
+ul.formList .icon-arrow-right.high,
+ul.formList .icon-arrow-right .text {
+  padding-right: 35px;
 }
 
-a.readMore {
-  display: block;
-  padding: 15px;
+ul.formList ~ .titleBox {
   margin-top: -15px;
-  text-align: center;
-  color: #999999;
 }
 
-a.readMore:active {
-  color: #666666;
+.iCheckBox input {
+  width: auto;
+}
+
+.iCheckBox .iRadio, .iCheckBox .iCheck {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 10px;
+  border: 2px solid #565656;
+}
+
+.iCheckBox .iRadio.checked, .iCheckBox .iCheck.checked {
+  background-color: #fac800;
+  border-color: #fff;
+  color: #1b1b1b;
+}
+
+.iCheckBox .iRadio.checked:before, .iCheckBox .iCheck.checked:before {
+  font-family: 'icomoon';
+  content: "\e904";
+}
+
+.iCheckBox .iRadio {
+  border-radius: 50%;
+}
+
+.iSwitchery {
+  -webkit-border-radius: 22px;
+  border-radius: 22px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: content-box;
+  background-clip: content-box;
+  background-color: #393939 !important;
+  border: 1px solid #565656 !important;
+}
+
+.iSwitchery > small {
+  position: absolute;
+  top: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+}
+
+.questionnaireTitle {
+  color: #1b1b1b;
+  margin: 15px 0;
+  padding: 30px 10px;
+  background-color: #fac800;
 }
 
 .fancybox-wrap {
@@ -1763,6 +1683,29 @@ button.swiper-pagination-bullet {
   }
 }
 
+.titleBox {
+  margin-bottom: -5px;
+  padding: 30px 10px 0;
+}
+
+.titleBox .title {
+  font-weight: normal;
+  color: #666666;
+}
+
+.titleBox .title i {
+  font-style: normal;
+  color: #999999;
+}
+
+.formBox .titleBox .title {
+  color: #dddddd;
+}
+
+.formBox .titleBox .title i {
+  color: #999999;
+}
+
 .tabBar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2211,57 +2154,311 @@ button.swiper-pagination-bullet {
   font-weight: bold;
 }
 
-.productInfo {
+ul.infoList li {
   margin: 15px 0;
+  background-color: #fff;
+  border-top: 1px solid #dddddd;
 }
 
-.productInfo .row {
+ul.infoList .row {
+  padding: 10px;
+  min-height: 22px;
+  position: relative;
+  border-bottom: 1px solid #dddddd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+ul.infoList .row p em {
+  color: #fac800;
+}
+
+ul.infoList .row p em.big {
+  font-size: 20px;
+}
+
+ul.infoList .row p.title {
+  font-weight: bold;
+}
+
+ul.infoList .row p.long {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  text-align: right;
+}
+
+ul.infoList .row p:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 10px;
+}
+
+ul.infoList .row a.btn {
+  height: auto;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding: 0 10px;
+  white-space: nowrap;
+  color: #666666;
+  border-left: 1px solid #dddddd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+ul.infoList .row a.btn:active {
+  background-color: #eeeeee;
+}
+
+ul.infoList .row a.btn:last-child {
+  margin-right: -10px;
+}
+
+ul.infoList .row a.btn [class*="icon-"] {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+ul.infoList .row.imageText {
+  display: block;
   padding: 10px;
 }
 
-.productInfo .row:after {
+ul.infoList .row.imageText:after {
   content: "";
   display: block;
   height: 0;
   clear: both;
 }
 
-.productInfo .row .image {
+ul.infoList .row.imageText.link {
+  padding: 0;
+}
+
+ul.infoList .row.imageText.link a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+}
+
+ul.infoList .row.imageText.link a:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+ul.infoList .row.imageText.link a:active {
+  background-color: #eeeeee;
+}
+
+ul.infoList .row.baseline {
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+ul.infoList .row .image {
   float: left;
   width: 75px;
   height: 75px;
+  margin-right: 10px;
 }
 
-.productInfo .row .image img {
+ul.infoList .row .image img {
   display: block;
   width: 75px;
   height: 75px;
 }
 
-.productInfo .row .info {
+ul.infoList .row .text {
   margin-left: 85px;
 }
 
-.productInfo .row .info .title {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+ul.infoList .row .text .title {
   margin: 4px 0;
 }
 
-.formBox .productInfo {
-  border-top: 1px solid #565656;
+ul.infoList .row .text p {
+  font-size: 14px;
+  margin: 3px 0;
 }
 
-.formBox .productInfo .row {
-  background-color: #434343;
-  border-bottom: 1px solid #565656;
+ul.infoList .gray {
+  color: #666666;
 }
 
-.formBox .productInfo .row .info {
-  color: #ffffff;
+ul.infoList .oneline {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.formBox .productInfo .row .info p.gray {
-  color: #dddddd;
+ul.infoList ~ .titleBox {
+  margin-top: -15px;
+}
+
+ul.couponList li {
+  position: relative;
+  margin: 15px 0;
+}
+
+ul.couponList li:active {
+  opacity: 0.9;
+}
+
+ul.couponList li img {
+  display: block;
+  width: 100%;
+}
+
+ul.couponList li .info {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  font-size: 14px;
+  color: #333333;
+}
+
+ul.couponList li .info p.pull-left {
+  margin-left: 25px;
+}
+
+ul.couponList li .info p.pull-right {
+  margin-right: 25px;
+}
+
+ul.couponList li.invalid .info,
+ul.couponList li.invalid img {
+  opacity: 0.5;
+}
+
+ul.couponList li.invalid p.dark,
+ul.couponList li.invalid p.tag {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  padding: 10px 40px;
+}
+
+ul.couponList li.invalid p.tag {
+  color: #1b1b1b;
+  background: #fac800;
+}
+
+ul.couponList li.invalid p.dark {
+  color: #999999;
+  background: #434343;
+}
+
+ul.couponList.myCoupon {
+  margin: 15px 10px;
+}
+
+ul.couponList.myCoupon li .info p.pull-left {
+  margin-left: 15px;
+}
+
+ul.couponList.myCoupon li .info p.pull-right {
+  margin-right: 15px;
+}
+
+ul.productList {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+ul.productList:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+ul.productList li {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  float: left;
+  width: 50%;
+}
+
+ul.productList li a {
+  display: block;
+  background-color: #fff;
+}
+
+ul.productList li a:active {
+  opacity: 0.75;
+}
+
+ul.productList li .image img {
+  display: block;
+  width: 100%;
+}
+
+ul.productList li .info {
+  font-size: 14px;
+  color: #333333;
+  padding: 10px;
+}
+
+ul.productList li .info .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+ul.productList li .info .row:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+ul.productList li .info .row p {
+  line-height: 22px;
+}
+
+ul.productList li .info .row em {
+  color: #fac800;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+ul.productList li .info .row .gray {
+  color: #999999;
+}
+
+a.readMore {
+  display: block;
+  padding: 15px;
+  margin-top: -15px;
+  text-align: center;
+  color: #999999;
+}
+
+a.readMore:active {
+  color: #666666;
 }

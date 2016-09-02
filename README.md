@@ -53,8 +53,16 @@
   - 收货地址管理 `8-integral-mall-address.html`
   - 新建收货地址 `8-integral-mall-address-new.html`
   - 编辑收货地址 `8-integral-mall-address-edit.html`
+  - 我的订单 `8-integral-order.html`
+  - 订单详情 `8-integral-order-content.html`
+  - 购物车 `8-integral-cart.html`
 
 # 更新记录
+
+## 2016-9-2
+
+> - 结构调整
+> - 完成积分中心剩余页面
 
 ## 2016-9-1
 
