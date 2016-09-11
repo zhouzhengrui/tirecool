@@ -48,20 +48,9 @@
                 <!-- slideshow over -->
                 <!-- toolbar start -->
                 <div class="toolBar">
-                    <div class="selectBox icon-triangle-down">
-                        <select name="">
-                            <option value="">普通会员兑换区</option>
-                            <option value="">金牌会员兑换区</option>
-                            <option value="">钻石会员兑换区</option>
-                            <option value="">白金会员兑换区</option>
-                        </select>
-                    </div>
-                    <div class="selectBox icon-triangle-down">
-                        <select name="">
-                            <option value="">积分从低到高排序</option>
-                            <option value="">积分从高到低排序</option>
-                        </select>
-                    </div>
+                    <!-- 选中当前排序时class添加active -->
+                    <a class="toolButton icon-triangle-down fancyBox active" href="#fancyBox01">普通会员兑换区</a>
+                    <a class="toolButton icon-triangle-down fancyBox active" href="#fancyBox02">积分从低到高排序</a>
                 </div>
                 <!-- toolbar over -->
                 <!-- list start -->
@@ -69,7 +58,9 @@
                     <li>
                         <a href="8-integral-mall-product.html">
                             <div class="image">
-                                <img src="img/goods01.jpg" alt=""> </div>
+                                <img src="img/goods01.jpg" alt="">
+                                <p class="tag">立即抢购</p>
+                            </div>
                             <div class="info">
                                 <h5 class="title">美孚速霸2000机油4L</h5>
                                 <div class="row">
@@ -84,7 +75,9 @@
                     <li>
                         <a href="8-integral-mall-product.html">
                             <div class="image">
-                                <img src="img/goods02.jpg" alt=""> </div>
+                                <img src="img/goods02.jpg" alt="">
+                                <p class="tag">立即抢购</p>
+                            </div>
                             <div class="info">
                                 <h5 class="title">亚马逊2100 10W~40</h5>
                                 <div class="row">
@@ -132,12 +125,50 @@
             </div>
             <!-- main over -->
         </div>
+        <!--fancybox start-->
+        <div style="display: none;">
+            <!--box01 start-->
+            <div id="fancyBox01">
+                <ul class="selectList">
+                    <li>
+                        <a href="#" href="javascript:;" onclick="$.fancybox.close();">普通会员兑换区</a>
+                    </li>
+                    <li>
+                        <a href="#" href="javascript:;" onclick="$.fancybox.close();">金牌会员兑换区</a>
+                    </li>
+                    <li>
+                        <a href="#" href="javascript:;" onclick="$.fancybox.close();">钻石会员兑换区</a>
+                    </li>
+                    <li>
+                        <a href="#" href="javascript:;" onclick="$.fancybox.close();">白金会员兑换区</a>
+                    </li>
+                </ul>
+            </div>
+            <!--box01 over-->
+            <!--box02 start-->
+            <div id="fancyBox02">
+                <ul class="selectList">
+                    <li>
+                        <a href="#" href="javascript:;" onclick="$.fancybox.close();">积分从低到高排序</a>
+                    </li>
+                    <li>
+                        <a href="#" href="javascript:;" onclick="$.fancybox.close();">积分从高到低排序</a>
+                    </li>
+                </ul>
+            </div>
+            <!--box02 over-->
+        </div>
+        <!--fancybox over-->
         <!-- JavaScript start -->
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="js/fancyBox/jquery.fancybox.pack.js"></script>
         <script type="text/javascript" src="js/iCheck/icheck.min.js"></script>
         <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
         <script type="text/javascript" src="js/switchery/switchery.min.js"></script>
+        <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+        <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+        <script type="text/javascript" src="js/raty/jquery.raty.js"></script>
+        <script type="text/javascript" src="js/mmenu/jquery.mmenu.all.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
         <!-- JavaScript over -->
     </body>

@@ -36,6 +36,7 @@ jQuery(document).ready(function($) {
         margin: 25,
         minWidth: 300,
         maxWidth: 1000,
+        minHeight: 0,
         closeBtn: false,
         helpers: {
             overlay: {
@@ -53,6 +54,11 @@ jQuery(document).ready(function($) {
     });
     $(".swiperTab a").click(function(e) {
         e.preventDefault()
+    });
+
+    // selection
+    $(".selection .group").click(function() {
+        $(this).addClass("active").siblings().removeClass("active");
     });
 
     // iCheck
@@ -74,5 +80,33 @@ jQuery(document).ready(function($) {
     //     });
     //
     // });
+
+    // raty
+    $('.raty').raty({
+        starType: 'a',
+        space: false
+    });
+    $('.ratyReadOnly').raty({
+        starType: 'a',
+        space: false,
+        readOnly: true,
+        score: function() {
+            return $(this).attr('data-score');
+        }
+    });
+
+    // nav
+    $("#sideNav").mmenu({
+        "navbar": {
+            "add": 'false',
+            "title": '筛选',
+        },
+        extensions: [
+            "pagedim-black"
+        ],
+        offCanvas: {
+            "position": "right"
+        }
+    });
 
 });

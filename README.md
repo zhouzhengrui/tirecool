@@ -1,9 +1,12 @@
-# 所用jQuery插件API文档
+# 所用插件API文档
 
 - [开关 - switchery](http://abpetkov.github.io/switchery/)
 - [弹出框 - fancyBox](http://fancyapps.com/fancybox/)
 - [单选复选框 - iCheck](http://www.bootcss.com/p/icheck/)
 - [触摸滑动(tab/slideshow) - swiper](http://www.swiper.com.cn/api/index.html)
+- [侧滑导航 - mmenu](http://mmenu.frebsite.nl/)
+- [模态窗口 - ModalWindowEffects](https://github.com/codrops/ModalWindowEffects)
+- [星级评分 - raty](http://wbotelhos.com/raty)
 
 # 已完成页面
 
@@ -19,12 +22,12 @@
 
 - 有奖信息完善
 
-  - 简单任务(含完成弹出框) `3-task-simple.html`
-  - 高级任务(含完成弹出框) `3-task-senior.html`
+  - 简单任务 (含完成弹出框) `3-task-simple.html`
+  - 高级任务 (含完成弹出框) `3-task-senior.html`
 
 - 个人信息
 
-  - 信息展示(含修改完成弹出框) `4-info-index.html`
+  - 信息展示 (含修改完成弹出框) `4-info-index.html`
 
 - 会员专属权益
 
@@ -48,16 +51,49 @@
   - 首页-金币换积分 `8-integral-index-gold.html`
   - 兑换商城 `8-integral-mall.html`
   - 商品详情 `8-integral-mall-product.html`
-  - 提交订单-快递(含运费提示弹出框) `8-integral-mall-order-express.html`
-  - 提交订单-自取(含购买成功弹出框) `8-integral-mall-order-take.html`
+  - 提交订单-快递 (含运费提示弹出框) `8-integral-mall-order-express.html`
+  - 提交订单-自取 (含购买成功弹出框) `8-integral-mall-order-take.html`
   - 收货地址管理 `8-integral-mall-address.html`
-  - 新建收货地址 `8-integral-mall-address-new.html`
+  - 新建收货地址 `8-integral-mall-address-build.html`
   - 编辑收货地址 `8-integral-mall-address-edit.html`
   - 我的订单 `8-integral-order.html`
   - 订单详情 `8-integral-order-content.html`
   - 购物车 `8-integral-cart.html`
 
+- 预约中心
+
+  - 首页 `9-reserve-index.html`
+  - 新建预约 (含预约时间弹出窗口/门店选择弹出窗口/预约成功弹出框) `9-reserve-build.html`
+  - 预约门店信息 `9-reserve-store.html`
+
+- 消费中心
+
+  - 首页 `10-expend-index.html`
+  - 待评价页面 `10-expend-wait.html`
+  - 已评价页面 `10-expend-finish.html`
+  - 评价页 `10-expend-comment.html`
+  - 评价详情页 `10-expend-comment-content.html`
+
+- 分销中心
+  - 首页 `11-distribution-index.html`
+  - 商城 `11-distribution-mall.html`
+  - 商城-商品详情 `11-distribution-mall-product.html`
+  - 商城-提交订单 (含购买成功弹出框) `11-distribution-mall-submit.html`
+  - 商城-我的订单 `11-distribution-order.html`
+  - 订单管理 `11-distribution-orderManage.html`
+  - 我的返佣 `11-distribution-commission.html`
+  - 我的返佣-待结算 `11-distribution-commission-wait.html`
+  - 我的返佣-已结算 `11-distribution-commission-finish.html`
+  - 我的钱包 `11-distribution-wallet.html`
+  - 分销海报 `11-distribution-poster.html`
+  - 成员管理 `11-distribution-member.html`
+  - 申请分销 `11-distribution-apply.html`
+
 # 更新记录
+
+## 2016-9-11
+
+> - 上传服务号所有页面, 企业号页面正在调整
 
 ## 2016-9-2
 
