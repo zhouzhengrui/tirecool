@@ -526,6 +526,16 @@ ul.formList p.text {
   color: #ffffff;
 }
 
+ul.formList p.text .tag {
+  display: inline-block;
+  font-size: 14px;
+  color: #1b1b1b;
+  padding: 2px 8px;
+  background-color: #fac800;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
 ul.formList a.link {
   display: block;
   color: #ffffff;
@@ -718,6 +728,135 @@ ul.formList .cartCheck a.btn {
   border-right: 1px solid #565656;
 }
 
+ul.formList .ranking {
+  height: 60px;
+}
+
+ul.formList .ranking .column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+ul.formList .ranking .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 35px;
+}
+
+ul.formList .ranking .row p:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+ul.formList .ranking .progressBar {
+  background-color: #393939;
+  border-radius: 4px;
+  padding: 2px;
+  margin-top: 15px;
+  width: 100%;
+  height: 4px;
+  position: relative;
+}
+
+ul.formList .ranking .progressBar .bar-1, ul.formList .ranking .progressBar .bar-2 {
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+}
+
+ul.formList .ranking .progressBar .bar-1 {
+  background-color: #fac800;
+  background: linear-gradient(to right, #00fa0d, #fac800);
+}
+
+ul.formList .ranking .progressBar .bar-2 {
+  background-color: #00fa0d;
+  background: linear-gradient(to right, #fac800, #fa2b00);
+  right: 2px;
+}
+
+ul.formList .ranking .progressBar .round {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  margin-top: -7px;
+  margin-left: -7px;
+  width: 14px;
+  height: 14px;
+  background-color: #fac800;
+  border: 2px solid #393939;
+}
+
+ul.formList .customer {
+  height: 50px;
+}
+
+ul.formList .customer .column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+ul.formList .customer .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 35px;
+}
+
+ul.formList .customer .row p:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+ul.formList .customer .photo {
+  position: absolute;
+  top: 50%;
+  margin-top: -27px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+ul.formList .customer .photo img {
+  display: block;
+  width: 100%;
+}
+
+ul.formList .customer .info {
+  position: absolute;
+  top: 15px;
+  left: 75px;
+}
+
+ul.formList .customer .info .title {
+  margin-bottom: 8px;
+}
+
 ul.formList em {
   color: #fac800;
 }
@@ -818,6 +957,36 @@ ul.formList ~ .titleBox {
   margin: 15px 0;
   padding: 30px 10px;
   background-color: #fac800;
+}
+
+.searchBox {
+  position: relative;
+  padding: 10px;
+}
+
+.searchBox input {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px 0 35px;
+  background-color: #434343;
+}
+
+.searchBox input:focus {
+  background-color: #5d5d5d;
+}
+
+.searchBox [class^="icon-"] {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 20px;
+  color: #999999;
+}
+
+.searchBox ~ .formBox ul.formList {
+  margin-top: 0;
 }
 
 .fancybox-wrap {
@@ -1974,8 +2143,60 @@ button.swiper-pagination-bullet {
   background: #fac800;
 }
 
-.infoBox.steward {
-  height: 200px;
+.infoBox.user {
+  height: 220px;
+}
+
+.infoBox.user .photo {
+  left: 50%;
+  margin-left: -45px;
+}
+
+.infoBox.staff {
+  height: 125px;
+}
+
+.infoBox.staff .photo {
+  left: 10px;
+}
+
+.infoBox.staff .info {
+  position: absolute;
+  top: 18px;
+  left: 115px;
+}
+
+.infoBox.staff .info .title {
+  margin-bottom: 5px;
+}
+
+.infoBox.ranking {
+  height: 125px;
+  margin-bottom: 1px;
+}
+
+.infoBox.ranking .photo {
+  left: 10px;
+}
+
+.infoBox.ranking .info {
+  position: absolute;
+  top: 24px;
+  left: 115px;
+}
+
+.infoBox.ranking .info .title {
+  margin-bottom: 5px;
+}
+
+.infoBox.ranking .info .title small {
+  margin-left: 5px;
+  font-weight: normal;
+}
+
+.infoBox.ranking .info .tag {
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .infoBox.wallet {
@@ -1984,13 +2205,11 @@ button.swiper-pagination-bullet {
 
 .infoBox .photo {
   position: absolute;
+  top: 50%;
+  margin-top: -47px;
   width: 90px;
   height: 90px;
   overflow: hidden;
-  top: 50%;
-  left: 50%;
-  margin-top: -45px;
-  margin-left: -45px;
   border: 2px solid #fff;
   border-radius: 50%;
 }
@@ -2004,64 +2223,137 @@ button.swiper-pagination-bullet {
   box-shadow: 0 0 90px white;
 }
 
+.infoBox .info .title {
+  margin-bottom: 15px;
+}
+
+.infoBox .info .data {
+  font-weight: normal;
+}
+
+.infoBox .info .tag {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px 8px;
+  background-color: #434343;
+  color: #ffffff;
+}
+
 .infoBox .top-center {
-  padding-top: 15px;
+  padding-top: 10px;
   text-align: center;
 }
 
-.infoBox .botton-center {
+.infoBox .top-left, .infoBox .top-right, .infoBox .bottom-left, .infoBox .bottom-right, .infoBox .bottom-center {
   position: absolute;
+}
+
+.infoBox .top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.infoBox .top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.infoBox .bottom-left {
+  left: 10px;
+  bottom: 10px;
+}
+
+.infoBox .bottom-right {
+  right: 10px;
+  bottom: 10px;
+}
+
+.infoBox .bottom-center {
   width: 100%;
-  bottom: 15px;
+  bottom: 10px;
   text-align: center;
 }
 
-.infoBox .layout-left {
+.infoBox .columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 20px 25px;
 }
 
-.infoBox .layout-left .name {
-  margin-bottom: 5px;
+.infoBox .columns .group {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
-.infoBox .layout-left p {
-  margin-bottom: 5px;
-}
-
-.infoBox .layout-left p:last-child {
-  margin-bottom: 0;
-}
-
-.infoBox .layout-leftRight {
-  padding: 25px 25px 20px;
-}
-
-.infoBox .layout-leftRight:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-.infoBox .layout-leftRight .left,
-.infoBox .layout-leftRight .right {
-  width: 50%;
-  float: left;
-}
-
-.infoBox .layout-leftRight .right {
-  text-align: right;
-}
-
-.infoBox .layout-leftRight .title {
+.infoBox .columns .title {
   font-size: 14px;
   margin-bottom: 5px;
 }
 
-.infoBox .layout-leftRight .data small {
-  font-size: 16px;
+.infoBox .columns .data {
   font-weight: normal;
+}
+
+.infoBox .columns .name {
+  margin-bottom: 5px;
+}
+
+.infoBox .columns p {
+  margin-bottom: 5px;
+}
+
+.infoBox .columns p:last-child {
+  margin-bottom: 0;
+}
+
+.infoBox .topLink {
+  padding: 20px 25px 0;
+}
+
+.infoBox .topLink a.link {
+  color: #1b1b1b;
+}
+
+.infoBox .topLink a.link:active {
+  opacity: .75;
+}
+
+.infoBox .topLink [class^="icon-"] {
   margin-left: 5px;
+  font-size: 24px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.infoBox .iconLink {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.infoBox .iconLink a {
+  display: block;
+  float: left;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 24px;
+  color: #1b1b1b;
+  text-align: center;
+}
+
+.infoBox .iconLink a:active {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .columnBox {
@@ -2105,9 +2397,12 @@ button.swiper-pagination-bullet {
   color: #666666;
 }
 
+.columnBox .column .data {
+  font-weight: normal;
+}
+
 .columnBox .column .data small {
   font-size: 16px;
-  font-weight: normal;
 }
 
 .columnBox .column.align-center {
@@ -4175,12 +4470,12 @@ li.mm-vertical.mm-opened > .mm-panel {
 
 .mm-menu .mm-navbar > *,
 .mm-menu .mm-navbar a {
-  color: rgba(0, 0, 0, 0.3);
+  color: #999999;
 }
 
 .mm-menu .mm-btn:after,
 .mm-menu .mm-btn:before {
-  border-color: #dddddd;
+  border-color: #999999;
 }
 
 .mm-menu .mm-listview {

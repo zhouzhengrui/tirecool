@@ -89,7 +89,21 @@
   - 成员管理 `11-distribution-member.html`
   - 申请分销 `11-distribution-apply.html`
 
+- 员工中心
+  - 首页 `12-staff-index.html`
+  - 我的业绩 `12-staff-achievement.html`
+  - 我的金币 `12-staff-gold.html`
+  - 排行榜 `12-staff-ranking.html`
+  - 沟通中心 `12-staff-communicate.html`
+  - 沟通中心-预约提醒 `12-staff-reserveRemind.html`
+  - 沟通中心-所属客户列表 `12-staff-customer.html`
+
 # 更新记录
+
+## 2016-9-12
+
+> - 上传员工中心部分页面
+> - 对之前部分页面布局优化调整
 
 ## 2016-9-11
 
