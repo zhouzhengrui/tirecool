@@ -173,7 +173,7 @@ small {
 }
 
 .container.gray {
-  background-color: #eeeeee;
+  background-color: #fafafa;
 }
 
 .container.dark {
@@ -256,7 +256,7 @@ small {
 .contentBox .content h5:before,
 .contentBox .content h6:before {
   width: 100%;
-  background-color: #dddddd;
+  background-color: #ebebeb;
 }
 
 .contentBox .content h1:after,
@@ -334,13 +334,13 @@ small {
 .buttonBox a.gray,
 .buttonBox button.gray,
 .buttonBox input.gray {
-  background-color: #dddddd;
+  background-color: #ebebeb;
 }
 
 .buttonBox a.gray:active,
 .buttonBox button.gray:active,
 .buttonBox input.gray:active {
-  background-color: #d0d0d0;
+  background-color: #dedede;
 }
 
 .buttonBox.small {
@@ -614,7 +614,7 @@ ul.formList .high {
 ul.formList .high .title {
   display: block;
   color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   line-height: 1.4;
 }
 
@@ -880,6 +880,10 @@ ul.formList .oneline {
 
 ul.formList .gray {
   color: #dddddd;
+}
+
+ul.formList .small {
+  font-size: 14px;
 }
 
 ul.formList .icon-arrow-right:before {
@@ -1240,7 +1244,7 @@ ul.formList ~ .titleBox {
 .fancyBoxTitle {
   padding: 16px;
   text-align: center;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ebebeb;
   margin-bottom: 10px;
 }
 
@@ -1906,13 +1910,13 @@ button.swiper-pagination-bullet {
   line-height: 44px;
   color: #666666;
   text-align: center;
-  background-color: #e1e1e1;
+  background-color: #ededed;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
 
 .tabBar a:active {
-  background-color: #d5d5d5;
+  background-color: #e1e1e1;
 }
 
 .tabBar a.active {
@@ -1925,7 +1929,7 @@ button.swiper-pagination-bullet {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  border-left: 1px solid #d2d2d2;
+  border-left: 1px solid #dfdfdf;
 }
 
 .tabBar a.cart [class^="icon-"] {
@@ -1978,6 +1982,7 @@ button.swiper-pagination-bullet {
   width: 50%;
   bottom: 8%;
   left: 5%;
+  color: #1b1b1b;
 }
 
 .cardBox .info .name {
@@ -1994,7 +1999,7 @@ button.swiper-pagination-bullet {
   right: 0;
   bottom: 0;
   font-size: 12px;
-  color: #666666;
+  color: #333333;
   font-style: normal;
 }
 
@@ -2090,7 +2095,7 @@ button.swiper-pagination-bullet {
   color: #fff;
   position: absolute;
   bottom: 10px;
-  left: 20px;
+  left: 22px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }
 
@@ -2104,6 +2109,12 @@ button.swiper-pagination-bullet {
 
 .indexLinkBox a.imgLink-2 {
   background-image: url("../img/indexImage02.jpg");
+}
+
+.indexLinkBox a.imgLink-2 .title {
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .indexLinkBox a.imgLink-3 {
@@ -2130,7 +2141,7 @@ button.swiper-pagination-bullet {
 }
 
 .formBox .titleBox .title {
-  color: #dddddd;
+  color: #999999;
 }
 
 .formBox .titleBox .title i {
@@ -2144,7 +2155,7 @@ button.swiper-pagination-bullet {
 }
 
 .infoBox.user {
-  height: 220px;
+  height: 180px;
 }
 
 .infoBox.user .photo {
@@ -2153,20 +2164,29 @@ button.swiper-pagination-bullet {
 }
 
 .infoBox.staff {
-  height: 125px;
+  height: 220px;
 }
 
 .infoBox.staff .photo {
+  left: 50%;
+  margin-left: -45px;
+}
+
+.infoBox.staffSmall {
+  height: 125px;
+}
+
+.infoBox.staffSmall .photo {
   left: 10px;
 }
 
-.infoBox.staff .info {
+.infoBox.staffSmall .info {
   position: absolute;
   top: 18px;
   left: 115px;
 }
 
-.infoBox.staff .info .title {
+.infoBox.staffSmall .info .title {
   margin-bottom: 5px;
 }
 
@@ -2300,10 +2320,6 @@ button.swiper-pagination-bullet {
   margin-bottom: 5px;
 }
 
-.infoBox .columns .data {
-  font-weight: normal;
-}
-
 .infoBox .columns .name {
   margin-bottom: 5px;
 }
@@ -2385,7 +2401,7 @@ button.swiper-pagination-bullet {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #dddddd;
+  background-color: #ebebeb;
 }
 
 .columnBox .column:first-child:before {
@@ -2514,8 +2530,8 @@ button.swiper-pagination-bullet {
 
 .productBox .info .title {
   padding: 10px;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .productBox .info .row {
@@ -2555,52 +2571,49 @@ button.swiper-pagination-bullet {
   right: 0;
   bottom: 0;
   color: #fff;
-  height: 58px;
-  padding: 50px 10px 10px;
-  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
-  background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
-  background: -ms-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
-  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
+  padding: 50px 10px 50px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
 }
 
-.storeBox .info .tag {
-  display: inline-block;
-  font-size: 14px;
-  color: #fac800;
-  border: 1px solid #fac800;
-  padding: 2px 10px;
-  border-radius: 5px;
-  vertical-align: middle;
-  font-weight: normal;
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
-
-.storeBox .info p {
-  margin-bottom: 5px;
-}
-
-.storeBox a.link {
-  display: block;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  padding: 8px 10px;
-  color: #1b1b1b;
+.storeBox .info .title {
   text-align: center;
+}
+
+.storeBox .link {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.storeBox .link a {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 5px;
+  padding: 5px 0;
+  color: #1b1b1b;
+  font-size: 14px;
   background-color: #fac800;
 }
 
-.storeBox a.link [class^="icon-"] {
-  font-size: 24px;
-}
-
-.storeBox a.link p {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.storeBox a.link:active {
+.storeBox .link a:active {
   background-color: #c79f00;
 }
 
@@ -2889,7 +2902,7 @@ button.swiper-pagination-bullet {
 ul.infoList li {
   margin: 15px 0;
   background-color: #fff;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ebebeb;
 }
 
 ul.infoList a {
@@ -2900,7 +2913,7 @@ ul.infoList .row {
   padding: 10px;
   min-height: 22px;
   position: relative;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ebebeb;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2948,7 +2961,7 @@ ul.infoList .row a.btn {
   padding: 0 10px;
   white-space: nowrap;
   color: #666666;
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #ebebeb;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2960,7 +2973,7 @@ ul.infoList .row a.btn {
 }
 
 ul.infoList .row a.btn:active {
-  background-color: #eeeeee;
+  background-color: #fafafa;
 }
 
 ul.infoList .row a.btn:last-child {
@@ -3008,7 +3021,7 @@ ul.infoList .row.imageText.link a:after {
 }
 
 ul.infoList .row.imageText.link a:active {
-  background-color: #eeeeee;
+  background-color: #fafafa;
 }
 
 ul.infoList .row.baseline {
@@ -3079,7 +3092,12 @@ ul.infoList .multiRow .row {
 }
 
 ul.infoList .gray {
-  color: #666666;
+  color: #999999;
+}
+
+ul.infoList .small {
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 ul.infoList .oneline {
@@ -3248,11 +3266,11 @@ ul.productList ~ a.readMore {
 
 ul.selectList {
   background-color: #fff;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ebebeb;
 }
 
 ul.selectList li {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ebebeb;
 }
 
 ul.selectList li a {
@@ -3262,7 +3280,7 @@ ul.selectList li a {
 }
 
 ul.selectList li a:active {
-  background-color: #eeeeee;
+  background-color: #fafafa;
 }
 
 a.readMore {
@@ -3346,7 +3364,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 .md-content.gray {
-  background-color: #eeeeee;
+  background-color: #fafafa;
 }
 
 /* Individual modal styles with animations/transitions */
@@ -4464,8 +4482,8 @@ li.mm-vertical.mm-opened > .mm-panel {
 }
 
 .mm-menu {
-  background: #eeeeee;
-  border-color: #dddddd;
+  background: #fafafa;
+  border-color: #ebebeb;
 }
 
 .mm-menu .mm-navbar > *,
@@ -4479,7 +4497,7 @@ li.mm-vertical.mm-opened > .mm-panel {
 }
 
 .mm-menu .mm-listview {
-  border-color: #dddddd;
+  border-color: #ebebeb;
 }
 
 .mm-menu .mm-listview > li .mm-next:after {

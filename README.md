@@ -74,20 +74,21 @@
   - 评价页 `10-expend-comment.html`
   - 评价详情页 `10-expend-comment-content.html`
 
-- 分销中心
-  - 首页 `11-distribution-index.html`
-  - 商城 `11-distribution-mall.html`
-  - 商城-商品详情 `11-distribution-mall-product.html`
-  - 商城-提交订单 (含购买成功弹出框) `11-distribution-mall-submit.html`
-  - 商城-我的订单 `11-distribution-order.html`
-  - 订单管理 `11-distribution-orderManage.html`
-  - 我的返佣 `11-distribution-commission.html`
-  - 我的返佣-待结算 `11-distribution-commission-wait.html`
-  - 我的返佣-已结算 `11-distribution-commission-finish.html`
-  - 我的钱包 `11-distribution-wallet.html`
-  - 分销海报 `11-distribution-poster.html`
-  - 成员管理 `11-distribution-member.html`
-  - 申请分销 `11-distribution-apply.html`
+- e商城
+  - 首页 `11-mall-index.html`
+  - 商城-商品详情 `11-mall-product.html`
+  - 商城-提交订单 (含购买成功弹出框) `11-mall-submit.html`
+  - 商城-个人中心 `11-mall-user.html`
+  - 商城-个人中心-我的订单 `11-mall-order.html`
+  - 商城-个人中心-申请分销 `11-mall-user-apply.html`
+  - 分销中心 `11-mall-distribution.html`
+  - 分销中心-订单管理 `11-mall-distribution-orderManage.html`
+  - 分销中心-我的返佣 `11-mall-distribution-commission.html`
+  - 分销中心-我的返佣-待结算 `11-mall-distribution-commission-wait.html`
+  - 分销中心-我的返佣-已结算 `11-mall-distribution-commission-finish.html`
+  - 分销中心-我的钱包 `11-mall-distribution-wallet.html`
+  - 分销中心-分销海报 `11-mall-distribution-poster.html`
+  - 分销中心-成员管理 `11-mall-distribution-member.html`
 
 - 员工中心
   - 首页 `12-staff-index.html`
@@ -99,6 +100,11 @@
   - 沟通中心-所属客户列表 `12-staff-customer.html`
 
 # 更新记录
+
+## 2016-9-14
+
+> - 上传用户界面大部分修改
+> - 原分销中心改为e商城, 添加个人中心, 文件结构有较大调整
 
 ## 2016-9-12
 

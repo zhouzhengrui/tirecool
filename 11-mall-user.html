@@ -10,71 +10,74 @@
         <link rel="stylesheet" href="icofont/style.css">
         <link rel="stylesheet" href="css/style.min.css">
         <!-- CSS over -->
-        <title>专属管家</title>
+        <title>e商城-个人中心</title>
     </head>
     <body>
         <div class="container dark">
             <!-- main start -->
             <div class="mainBox">
+                <!-- tabbar start -->
+                <div class="tabBar">
+                    <a href="11-mall-index.html">e商城</a>
+                    <a href="11-mall-user.html" class="active">个人中心</a>
+                    <!-- 普通用户不显示分销中心 -->
+                    <a href="11-mall-distribution.html">分销中心</a>
+                    <!-- 套用 8-integral-cart.html -->
+                    <a href="#" class="cart">
+                        <span class="icon-shopping-cart">
+                            <i class="tag">2</i>
+                        </span>
+                    </a>
+                </div>
+                <!-- tabbar over -->
                 <!-- info start -->
-                <div class="infoBox staff">
-                    <h4 class="top-center">浦东小库</h4>
+                <div class="infoBox user">
+                    <!-- 调取微信名字 -->
+                    <div class="top-center">
+                        <h4>李先生</h4>
+                    </div>
+                    <!-- 调取微信头像 -->
                     <div class="photo light">
                         <img src="img/photo.jpg" alt=""> </div>
-                    <p class="bottom-center">上海市 浦东新区 浦建路店</p>
+                    <!-- 调取微信号 -->
+                    <p class="bottom-center">13888888888</p>
                 </div>
                 <!-- info over -->
                 <!-- form start -->
                 <form class="formBox" action="">
-                    <ul class="formList">
-                        <li>
-                            <div class="group">
-                                <label class="title">
-                                    <span class="icon-man-gear"></span>工号</label>
-                                <p class="text">1234567890</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">
-                                    <span class="icon-man-many"></span>部门</label>
-                                <p class="text">维修部顾问</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="formList">
-                        <li>
-                            <a href="tel:138-8888-8888" class="link">
-                                <div class="group icon-arrow-right">
-                                    <label class="title">
-                                        <span class="icon-phone"></span>呼叫专属管家</label>
-                                    <p class="text">138-8888-8888</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="link">
-                                <div class="group icon-arrow-right">
-                                    <label class="title">
-                                        <span class="icon-weixin"></span>微信咨询</label>
-                                    <p class="text"></p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="formList">
-                        <li>
-                            <div class="group">
-                                <label class="title">
-                                    <span class="icon-gold"></span>打赏金币</label>
-                                <div class="input">
-                                    <input type="tel" placeholder="请输入打赏金额"> </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="buttonBox small">
-                        <button class="button fancyBox" type="button" href="#fancyBox01">打赏</button>
+                    <div class="titleBox">
+                        <h5 class="title">收货地址管理</h5>
                     </div>
+                    <ul class="formList">
+                        <li>
+                            <a class="link" href="8-integral-mall-address.html">
+                                <div class="group high icon-arrow-right">
+                                    <label class="title">收件人: 李先生
+                                        <i>138-8888-8888</i>
+                                    </label>
+                                    <p class="small">收货地址: 上海市浦东新区浦建路1480号轮库上海浦建路店</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="formList">
+                        <li>
+                            <a href="11-mall-order.html" class="link">
+                                <div class="group icon-arrow-right">
+                                    <label class="title">我的订单</label>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="formList">
+                        <li>
+                            <a href="11-mall-user-apply.html" class="link">
+                                <div class="group icon-arrow-right">
+                                    <label class="title">申请分销</label>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </form>
                 <!-- form over -->
             </div>
@@ -85,13 +88,7 @@
             <!--box01 start-->
             <div id="fancyBox01">
                 <div class="fancyBoxTitle">
-                    <h4>非常感谢!</h4>
-                </div>
-                <div class="fancyBoxContent">
-                    <p>
-                        <b>您给小库打赏了
-                            <i>300</i>金币</b>
-                    </p>
+                    <h4>修改成功</h4>
                 </div>
                 <div class="fancyBoxButton buttonBox">
                     <a class="button" href="javascript:;" onclick="$.fancybox.close();">
