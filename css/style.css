@@ -793,10 +793,10 @@ ul.formList .ranking .progressBar .round {
   position: absolute;
   z-index: 2;
   top: 50%;
-  margin-top: -7px;
-  margin-left: -7px;
-  width: 14px;
-  height: 14px;
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
   background-color: #fac800;
   border: 2px solid #393939;
 }
@@ -2244,7 +2244,7 @@ button.swiper-pagination-bullet {
 }
 
 .infoBox .info .title {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .infoBox .info .data {
@@ -2257,8 +2257,8 @@ button.swiper-pagination-bullet {
   display: inline-block;
   font-size: 14px;
   padding: 2px 8px;
-  background-color: #434343;
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #1b1b1b;
 }
 
 .infoBox .top-center {
@@ -3205,29 +3205,16 @@ ul.productList li a:active {
   opacity: 0.75;
 }
 
-ul.productList li .image {
-  position: relative;
-}
-
 ul.productList li .image img {
   display: block;
   width: 100%;
-}
-
-ul.productList li .image .tag {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  padding: 5px 10px;
-  color: #1b1b1b;
-  background-color: #fac800;
-  font-size: 14px;
 }
 
 ul.productList li .info {
   font-size: 14px;
   color: #333333;
   padding: 10px;
+  position: relative;
 }
 
 ul.productList li .info .title {
@@ -3258,6 +3245,23 @@ ul.productList li .info .row em {
 
 ul.productList li .info .row .gray {
   color: #999999;
+}
+
+ul.productList li .info .tag {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  right: 10px;
+  bottom: 35px;
+  padding: 3px 3px;
+  line-height: 1.2;
+  width: 38px;
+  height: 38px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #fa2b00;
+  text-align: center;
+  font-weight: bold;
 }
 
 ul.productList ~ a.readMore {
