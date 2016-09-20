@@ -96,14 +96,34 @@
   - 我的金币 `12-staff-gold.html`
   - 排行榜 `12-staff-ranking.html`
   - 沟通中心 `12-staff-communicate.html`
-  - 沟通中心-预约提醒 `12-staff-reserveRemind.html`
+  - 沟通中心-预约提醒 (含预约状态修改弹窗/修改成功弹出框) `12-staff-reserveRemind.html`
+  - 沟通中心-预约提醒-预约详情 (含预约状态修改弹窗/预约时间修改弹窗/修改成功弹出框) `12-staff-reserveRemind-content.html`
+  - 沟通中心-4万公里换胎提醒 `12-staff-40000Remind.html`
+  - 沟通中心-生日提醒 `12-staff-birthdayRemind.html`
+  - 沟通中心-消息回访提醒 `12-staff-dialogRemind.html`
+  - 沟通中心-派单留资 `12-staff-leafletRemind.html`
+  - 沟通中心-派单留资-新建 `12-staff-leafletRemind-build.html`
+  - 沟通中心-派单留资-详细信息 `12-staff-leafletRemind-content.html`
   - 沟通中心-所属客户列表 `12-staff-customer.html`
+  - 沟通中心-所属客户列表-详细信息 (含快速预约弹窗) `12-staff-customer-content.html`
+  - 沟通中心-所属客户列表-详细信息-消费记录 `12-staff-customer-expend.html`
+  - 沟通中心-所属客户列表-详细信息-回访记录 `12-staff-customer-visit.html`
+  - 顾客预约管理 `12-staff-reserveManage.html`
+  - 兑换商城 `12-staff-mall.html`
 
 # 更新记录
 
+## 2016--9-20
+
+> - 上传企业号所有页面
+
+## 2016-9-19
+
+> - 企业号界面修改完成
+
 ## 2016-9-17
 
-> - 上传用户界面全部修改完成
+> - 用户界面全部修改完成
 > - 上传员工界面部分修改
 
 ## 2016-9-14

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <!-- CSS start -->
+        <link rel="stylesheet" href="icofont/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
+        <!-- CSS over -->
+        <title>员工中心-沟通中心-派单留资-新建</title>
+    </head>
+    <body>
+        <div class="container dark">
+            <!-- main start -->
+            <div class="mainBox">
+                <!-- form start -->
+                <form class="formBox" action="">
+                    <div class="titleBox">
+                        <h5 class="title">基本信息</h5>
+                    </div>
+                    <ul class="formList">
+                        <li>
+                            <div class="group">
+                                <label class="title">姓名
+                                    <i>(必填)</i>
+                                </label>
+                                <div class="input">
+                                    <input type="text" placeholder="请输入客户真实姓名"> </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="group">
+                                <label class="title">性别
+                                    <i>(必填)</i>
+                                </label>
+                                <div class="input icon-arrow-right">
+                                    <select>
+                                        <option value="" disabled>请选择</option>
+                                        <option value="" selected>男</option>
+                                        <option value="">女</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="group">
+                                <label class="title">手机号
+                                    <i>(必填)</i>
+                                </label>
+                                <div class="input">
+                                    <input type="tel" placeholder="请输入客户手机号码"> </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="group">
+                                <label class="title">车牌
+                                    <i>(必填)</i>
+                                </label>
+                                <div class="input">
+                                    <input type="text" placeholder="请输入客户车牌"> </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="group">
+                                <label class="title">车型
+                                    <i>(必填)</i>
+                                </label>
+                                <div class="input">
+                                    <input type="text" placeholder="请输入客户车型"> </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="group">
+                                <label class="title">职业</label>
+                                <div class="input">
+                                    <input type="text" placeholder="请输入客户职业"> </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="formList">
+                        <li>
+                            <div class="group textarea">
+                                <textarea name="name" rows="5" placeholder="备注"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="buttonBox">
+                        <button class="button fancyBox" type="button" href="#fancyBox01">提交</button>
+                    </div>
+                </form>
+                <!-- form over -->
+            </div>
+            <!-- main over -->
+        </div>
+        <!--fancybox start-->
+        <div style="display: none;">
+            <!--box01 start-->
+            <div id="fancyBox01">
+                <div class="fancyBoxTitle">
+                    <h4>提交成功</h4>
+                </div>
+                <div class="fancyBoxButton buttonBox">
+                    <a class="button" href="javascript:;" onclick="$.fancybox.close();">
+                        <span>确定</span>
+                    </a>
+                </div>
+            </div>
+            <!--box01 over-->
+        </div>
+        <!--fancybox over-->
+        <!-- JavaScript start -->
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/fancyBox/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/iCheck/icheck.min.js"></script>
+        <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+        <script type="text/javascript" src="js/switchery/switchery.min.js"></script>
+        <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+        <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+        <script type="text/javascript" src="js/raty/jquery.raty.js"></script>
+        <script type="text/javascript" src="js/mmenu/jquery.mmenu.all.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <!-- JavaScript over -->
+    </body>
+</html>
