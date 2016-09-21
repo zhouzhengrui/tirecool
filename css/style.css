@@ -2282,13 +2282,15 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.infoBox.ranking .medal {
+.infoBox.ranking .first3 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 90px;
   height: 90px;
-  left: 10px;
 }
 
-.infoBox.ranking .medal img {
+.infoBox.ranking .first3 img {
   display: block;
   width: 100%;
 }
@@ -2300,12 +2302,21 @@ button.swiper-pagination-bullet {
 }
 
 .infoBox.ranking .info .title {
+  position: relative;
   margin-bottom: 5px;
 }
 
 .infoBox.ranking .info .title small {
   margin-left: 5px;
   font-weight: normal;
+}
+
+.infoBox.ranking .info .medal {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  vertical-align: top;
 }
 
 .infoBox.ranking .info .tag {
@@ -2325,11 +2336,18 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 50%;
   margin-top: -47px;
-  width: 90px;
-  height: 90px;
+  width: 94px;
+  height: 94px;
+}
+
+.infoBox .photo .image {
   overflow: hidden;
   border: 2px solid #fff;
   border-radius: 50%;
+}
+
+.infoBox .photo .image.light {
+  box-shadow: 0 0 90px white;
 }
 
 .infoBox .photo img {
@@ -2337,8 +2355,36 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 
-.infoBox .photo.light {
-  box-shadow: 0 0 90px white;
+.infoBox .photo .medal {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.infoBox .medal {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.infoBox .medal.gold {
+  color: #e18200;
+  background: linear-gradient(to bottom, #fedc15, #fef26a, #e18200);
+}
+
+.infoBox .medal.silver {
+  color: #666469;
+  background: linear-gradient(to bottom, #cbcac7, #f9fcfe, #666469);
+}
+
+.infoBox .medal.bronze {
+  color: #91623c;
+  background: linear-gradient(to bottom, #cda16a, #d8ac73, #b08255);
 }
 
 .infoBox .info .title {
@@ -2364,7 +2410,11 @@ button.swiper-pagination-bullet {
   text-align: center;
 }
 
-.infoBox .top-left, .infoBox .top-right, .infoBox .bottom-left, .infoBox .bottom-right, .infoBox .bottom-center {
+.infoBox .bottom-center,
+.infoBox .bottom-left,
+.infoBox .bottom-right,
+.infoBox .top-left,
+.infoBox .top-right {
   position: absolute;
 }
 
@@ -2390,8 +2440,18 @@ button.swiper-pagination-bullet {
 
 .infoBox .bottom-center {
   width: 100%;
-  bottom: 10px;
+  bottom: 15px;
   text-align: center;
+}
+
+.infoBox .bottom-center .tag {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #1b1b1b;
 }
 
 .infoBox .columns {
@@ -2439,7 +2499,7 @@ button.swiper-pagination-bullet {
 }
 
 .infoBox .topLink a.link:active {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .infoBox .topLink [class^="icon-"] {
@@ -2688,7 +2748,7 @@ button.swiper-pagination-bullet {
   right: 0;
   bottom: 0;
   color: #fff;
-  padding: 50px 10px 50px;
+  padding: 50px 10px;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
 }
 
@@ -2809,7 +2869,7 @@ button.swiper-pagination-bullet {
   color: #1b1b1b;
 }
 
-.serviceBox .group:before, .serviceBox .group:after {
+.serviceBox .group:after, .serviceBox .group:before {
   content: "";
   display: block;
   position: absolute;
