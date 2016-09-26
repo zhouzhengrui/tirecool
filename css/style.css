@@ -390,6 +390,44 @@ ul.formList .group {
   align-items: center;
 }
 
+ul.formList .group div.link {
+  height: 44px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+ul.formList .group div.link a {
+  display: block;
+  width: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #dddddd;
+  border-left: 1px solid #565656;
+}
+
+ul.formList .group div.link a [class^="icon-"] {
+  font-size: 20px;
+  line-height: 44px;
+}
+
+ul.formList .group div.link a:active {
+  color: #fff;
+  background-color: #505050;
+}
+
 ul.formList label.title {
   margin-right: 10px;
   color: #dddddd;
@@ -554,44 +592,6 @@ ul.formList a.link {
 
 ul.formList a.link:active .group {
   background-color: #393939;
-}
-
-ul.formList div.link {
-  height: 44px;
-  margin-top: -10px;
-  margin-bottom: -10px;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  justify-content: flex-end;
-}
-
-ul.formList div.link a {
-  display: block;
-  width: 44px;
-  line-height: 44px;
-  text-align: center;
-  color: #dddddd;
-  border-left: 1px solid #565656;
-}
-
-ul.formList div.link a [class^="icon-"] {
-  font-size: 20px;
-  line-height: 44px;
-}
-
-ul.formList div.link a:active {
-  color: #fff;
-  background-color: #505050;
 }
 
 ul.formList a.btn {
