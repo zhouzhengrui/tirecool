@@ -1,4 +1,4 @@
-# 所用插件API文档
+# 所用插件
 
 - [开关 - switchery](http://abpetkov.github.io/switchery/)
 - [弹出框 - fancyBox](http://fancyapps.com/fancybox/)
@@ -7,8 +7,15 @@
 - [侧滑导航 - mmenu](http://mmenu.frebsite.nl/)
 - [模态窗口 - ModalWindowEffects](https://github.com/codrops/ModalWindowEffects)
 - [星级评分 - raty](http://wbotelhos.com/raty)
+- [折叠面板 - jQuery Accordion](https://vctrfrnndz.github.io/jquery-accordion/)
 
 # 更新记录
+
+## 2016-9-28
+
+> - 加入jQuery Accordion插件
+> - 4-info-index.html / 3-task-simple.html 改为可折叠面板, 添加奖励提示信息
+> - css/js有改动, 每次更新后css/icofont/img/js这几个文件夹可直接覆盖
 
 ## 2016-9-26
 

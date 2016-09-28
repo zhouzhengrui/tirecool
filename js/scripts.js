@@ -109,4 +109,7 @@ jQuery(document).ready(function($) {
         }
     });
 
+    // accordion
+    $('#accordion [data-accordion]').accordion();
+
 });

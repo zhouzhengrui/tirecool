@@ -17,152 +17,162 @@
             <!-- main start -->
             <div class="mainBox">
                 <!-- form start -->
-                <form class="formBox" action="">
-                    <div class="titleBox">
-                        <h5 class="title">基本信息</h5>
-                    </div>
-                    <ul class="formList">
-                        <li>
-                            <div class="group">
-                                <label class="title">姓名
-                                    <i>(必填)</i>
-                                </label>
-                                <div class="input">
-                                    <input type="text" placeholder="请输入您的真实姓名" value="李先生"> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">手机号
-                                    <i>(必填)</i>
-                                </label>
-                                <div class="input">
-                                    <input type="tel" placeholder="请输入您的手机号码" value="138 8888 8888"> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">出生日期
-                                    <i>(必填)</i>
-                                </label>
-                                <div class="input icon-arrow-right">
-                                    <input type="date" value="1987-08-03"> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">Email</label>
-                                <div class="input">
-                                    <input type="email" placeholder="请输入您的邮箱地址" value="administrator@163.com"> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">省份</label>
-                                <div class="input icon-arrow-right">
-                                    <select>
-                                        <option value="" disabled>请选择</option>
-                                        <option value="上海" selected>上海</option>
-                                        <option value="北京">北京</option>
-                                        <option value="江苏">江苏</option>
-                                        <option value="江苏">浙江</option>
-                                    </select>
+                <form class="formBox" id="accordion" data-accordion-group>
+                    <section data-accordion class="open">
+                        <div class="titleBox" data-control>
+                            <h5 class="title">基本信息
+                                <em class="label">完善基本信息可以获得100金币奖励哦!</em>
+                            </h5>
+                        </div>
+                        <ul class="formList" data-content>
+                            <li>
+                                <div class="group">
+                                    <label class="title">姓名
+                                        <i>(必填)</i>
+                                    </label>
+                                    <div class="input">
+                                        <input type="text" placeholder="请输入您的真实姓名" value="李先生"> </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">城市</label>
-                                <div class="input icon-arrow-right">
-                                    <select>
-                                        <option value="" disabled>请选择</option>
-                                        <option value="上海" selected>上海</option>
-                                        <option value="北京">北京</option>
-                                        <option value="江苏">江苏</option>
-                                        <option value="江苏">浙江</option>
-                                    </select>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">手机号
+                                        <i>(必填)</i>
+                                    </label>
+                                    <div class="input">
+                                        <input type="tel" placeholder="请输入您的手机号码" value="138 8888 8888"> </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">住址</label>
-                                <div class="input">
-                                    <input type="text" placeholder="请输入您的住址" value="浦东新区浦建路1480号"> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">身份证</label>
-                                <div class="input">
-                                    <input type="tel" placeholder="请输入您的身份证号码" value="342422198708036356"> </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="titleBox">
-                        <h5 class="title">车辆信息</h5>
-                    </div>
-                    <ul class="formList">
-                        <li>
-                            <div class="group">
-                                <label class="title">品牌</label>
-                                <div class="input icon-arrow-right">
-                                    <select>
-                                        <option value="" disabled>请选择</option>
-                                        <option value="奔驰" selected>奔驰</option>
-                                        <option value="奔驰">宝马</option>
-                                    </select>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">出生日期
+                                        <i>(必填)</i>
+                                    </label>
+                                    <div class="input icon-arrow-right">
+                                        <input type="date" value="1987-08-03"> </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">车系</label>
-                                <div class="input icon-arrow-right">
-                                    <select>
-                                        <option value="" disabled>请选择</option>
-                                        <option value="1系" selected>1系</option>
-                                        <option value="2系">2系</option>
-                                    </select>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">Email</label>
+                                    <div class="input">
+                                        <input type="email" placeholder="请输入您的邮箱地址" value="administrator@163.com"> </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">车型</label>
-                                <div class="input icon-arrow-right">
-                                    <select>
-                                        <option value="" disabled>请选择</option>
-                                        <option value="三厢" selected>三厢</option>
-                                        <option value="两厢">两厢</option>
-                                    </select>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">省份</label>
+                                    <div class="input icon-arrow-right">
+                                        <select>
+                                            <option value="" disabled>请选择</option>
+                                            <option value="上海" selected>上海</option>
+                                            <option value="北京">北京</option>
+                                            <option value="江苏">江苏</option>
+                                            <option value="江苏">浙江</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">车牌号
-                                    <i>(必填)</i>
-                                </label>
-                                <div class="input">
-                                    <input type="text" placeholder="请输入您的车牌号码" value="沪A 88888"> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">里程</label>
-                                <div class="input">
-                                    <input type="tel" placeholder="请输入行驶里程(公里)" value="500公里"> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="group">
-                                <label class="title">最近一次保养时间</label>
-                                <div class="input icon-arrow-right">
-                                    <input type="date" value="2016-08-03"> </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">城市</label>
+                                    <div class="input icon-arrow-right">
+                                        <select>
+                                            <option value="" disabled>请选择</option>
+                                            <option value="上海" selected>上海</option>
+                                            <option value="北京">北京</option>
+                                            <option value="江苏">江苏</option>
+                                            <option value="江苏">浙江</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">住址</label>
+                                    <div class="input">
+                                        <input type="text" placeholder="请输入您的住址" value="浦东新区浦建路1480号"> </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">身份证</label>
+                                    <div class="input">
+                                        <input type="tel" placeholder="请输入您的身份证号码" value="342422198708036356"> </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section data-accordion>
+                        <div class="titleBox" data-control>
+                            <h5 class="title">车辆信息
+                                <em class="label">完善车辆信息可以获得200金币奖励哦!</em>
+                            </h5>
+                        </div>
+                        <ul class="formList" data-content>
+                            <li>
+                                <div class="group">
+                                    <label class="title">品牌</label>
+                                    <div class="input icon-arrow-right">
+                                        <select>
+                                            <option value="" disabled>请选择</option>
+                                            <option value="奔驰" selected>奔驰</option>
+                                            <option value="奔驰">宝马</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">车系</label>
+                                    <div class="input icon-arrow-right">
+                                        <select>
+                                            <option value="" disabled>请选择</option>
+                                            <option value="1系" selected>1系</option>
+                                            <option value="2系">2系</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">车型</label>
+                                    <div class="input icon-arrow-right">
+                                        <select>
+                                            <option value="" disabled>请选择</option>
+                                            <option value="三厢" selected>三厢</option>
+                                            <option value="两厢">两厢</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">车牌号
+                                        <i>(必填)</i>
+                                    </label>
+                                    <div class="input">
+                                        <input type="text" placeholder="请输入您的车牌号码" value="沪A 88888"> </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">里程
+                                        <em class="label">定期更新里程送金币!</em>
+                                    </label>
+                                    <div class="input">
+                                        <input type="tel" placeholder="请输入行驶里程(公里)" value="500公里"> </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="group">
+                                    <label class="title">最近一次保养时间</label>
+                                    <div class="input icon-arrow-right">
+                                        <input type="date" value="2016-08-03"> </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
                     <div class="titleBox">
                         <h5 class="title">信息验证
                             <i>(修改手机号码时验证码必填)</i>
@@ -212,6 +222,7 @@
         <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
         <script type="text/javascript" src="js/raty/jquery.raty.js"></script>
         <script type="text/javascript" src="js/mmenu/jquery.mmenu.all.min.js"></script>
+        <script type="text/javascript" src="js/accordion/jquery.accordion.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
         <!-- JavaScript over -->
     </body>
